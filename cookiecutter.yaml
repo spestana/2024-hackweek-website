@@ -1,4 +1,4 @@
-repo_directory: html
+https://geohackweek.github.io/assets/images/banner.jpgrepo_directory: html
 name: GeoSmart Hackweek
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
@@ -15,17 +15,17 @@ banner:
   image: https://geo-smart.github.io/assets/img/home.jpg
 about:
   description:
-    "We are in the early stages of organizing a third event as part of this series, and we need your help! Consider joining the hackweek organizing team. We will partner with you to design tutorials and projects, and provide a variety of professional development opportunities along the way. Click on the button below to learn more:"
+    "We are in the early stages of organizing a second event as part of this series, and we need your help! Consider joining the hackweek organizing team. We will partner with you to design tutorials and projects, and provide a variety of professional development opportunities along the way. Click on the button below to learn more:"
   learn_more: https://escience.notion.site/UW-Hackweek-Organizing-Team-Application-b7e5742a4c7e4cad8b4ece80ee171ab0
-  #links:
-  #- url: https://geosmart.hackweek.io/
-  #  title: 2023 Hackweek
-  #  new_window: true
+  links:
+    - url: https://geo-smart.github.io/2023-hackweek-website/
+      title: 2023 Hackweek
+      new_window: true
 applicant_info: Right now we are only accepting applications for our Organizing Team. However, we would still like to hear from you if you are interested in attending as a participant! Applications for participants will open in early April. Click on the button below and we will be sure to email you as soon as the application form is available.
-#team:
-#  !include book/team.yaml
-#schedule:
-#  !include book/schedule.yaml
+team:
+  !include book/team.yaml
+schedule:
+  !include book/schedule.yaml
 sponsors:
   description: 'This event was made possible by the National Science Foundation (Awards #1829585, #2117834) and the eScience Institute in collaboration with CUAHSI and ESIP. Cloud computing infrastructure provided by CryoCloud.'
   organizations:
