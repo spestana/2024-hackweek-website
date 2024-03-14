@@ -1,4 +1,4 @@
-repo_directory: html
+https://geohackweek.github.io/assets/images/banner.jpgrepo_directory: html
 name: GeoSmart Hackweek
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
@@ -8,7 +8,11 @@ banner:
   end_date: 23 August
   year: 2024
   location: Seattle, WA
-  image: https://geohackweek.github.io/assets/images/banner.jpg
+  links:
+    - url: intro.html
+      title: Event Jupyter Book
+      new_window: true
+  image: https://geo-smart.github.io/assets/img/home.jpg
 about:
   description:
     "We are in the early stages of organizing a second event as part of this series, and we need your help! Consider joining the hackweek organizing team. We will partner with you to design tutorials and projects, and provide a variety of professional development opportunities along the way. Click on the button below to learn more:"
