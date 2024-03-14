@@ -8,10 +8,6 @@ banner:
   end_date: 23 August
   year: 2024
   location: Seattle, WA
-  links:
-    - url: intro.html
-      title: Event Jupyter Book
-      new_window: true
   image: https://geohackweek.github.io/assets/images/banner.jpg
 about:
   description:
