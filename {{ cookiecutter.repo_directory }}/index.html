@@ -119,7 +119,7 @@
             <div class="hero-intro mb-4">{{ cookiecutter.banner.description
                 }}
             </div>
-            {%- if cookiecutter.banner.links %}
+            {%- if 'links' in cookiecutter.banner %}
             <div class="hero-cta">
                 {%- for link in cookiecutter.banner.links %}
                 <a class="btn btn-primary btn-lg m-2"
