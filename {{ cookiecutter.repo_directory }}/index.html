@@ -138,6 +138,76 @@
 </div>
 <!--//hero-block-->
 
+
+
+<section id="about-section" class="about-section section theme-bg-light pb-4">
+    <div class="container">
+        <h3 class="section-heading text-center">
+            About {{ cookiecutter.name }}
+        </h3>
+        <div class="section-intro text-center single-col-max mx-auto mb-3">
+            {{ cookiecutter.about.description }}
+        </div>
+        <div class="about-cta text-center mb-4">
+            <a class="btn btn-secondary btn-lg"
+               href="{{ cookiecutter.about.learn_more }}"
+               target="_blank">
+                Organizing Team Information
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+        <div class="section-intro text-center single-col-max mx-auto mb-3">
+            Ready to jump right in and apply? 
+        </div>    
+        <div class="about-cta text-center mb-4">
+            <a class="btn btn-secondary btn-lg"
+            href="https://washington.co1.qualtrics.com/jfe/form/SV_2mCdfajojmtDIBo"
+            target="_blank">
+             Apply to the Organizing Team
+             <i class="fas fa-external-link-alt"></i>
+         </a>
+        </div>
+
+        {%- if 'links' in cookiecutter.about %}
+            <div class="hero-cta text-center mb-4">
+                <h4 class="mb-3 text-center">
+                    Past Events:
+                </h4>
+                {%- for link in cookiecutter.about.links %}
+                    <a class="btn btn-primary btn-lg mb-3 mx-2"
+                       href="{{ link.url }}"
+                        {{ 'target="_blank"' if link.new_window == 'True' else '' }}
+                    >
+                        {{ link.title }}
+                    </a>
+                {%- endfor %}
+            </div>
+        {%- endif %}
+    </div>
+
+    <div class="media-block theme-bg-primary py-5">
+        <div class="container">
+            <h4 class="text-white text-center mb-3">
+                Information for Participants
+            </h4>
+            <div
+                class="section-intro text-center single-col-max mx-auto text-white mb-5">
+                {{cookiecutter.applicant_info}}
+                <div class="about-cta text-center mb-4"></div>
+                    <a class="btn btn-primary btn-lg mb-3 mx-2"
+                    href="https://forms.fillout.com/t/fvDozLe31gus"
+                    target="_blank">
+                    Participant Interest Form
+                    <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--//about-section-->
+
 <section id="countdown" class="section theme-bg-light pt-4 pb-3">
     <div id="countdown-intro" class="event-countdown text-center">
         <h4 class="countdown-intro mb-2 text-center">
@@ -458,92 +528,6 @@
     <hr>
 </div>
 
-<!--//about-section-->
-<section id="about-section" class="about-section section">
-    <div class="container">
-        <h3 class="section-heading text-center mb-3">
-            About {{ cookiecutter.name }}
-        </h3>
-        <div class="section-intro single-col-max mx-auto mb-4">
-            {{ cookiecutter.about.description }}
-        </div>
-
-        {%- if 'expanded_description' in cookiecutter.about %}
-            <div class="section-intro single-col-max mx-auto mb-4">
-                <div class="accordion" id="expandDescription">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseList"
-                                    aria-expanded="true"
-                                    aria-controls="collapseList">
-                                {{ cookiecutter.about.expanded_description.header }}
-                            </button>
-                        </h2>
-                        <div id="collapseList"
-                             class="accordion-collapse collapse show"
-                             aria-labelledby="headingOne"
-                             data-bs-parent="#headingOne">
-                            <div class="accordion-body">
-                                {%- for item in cookiecutter.about.expanded_description.list %}
-                                    <ul>
-                                        <i><strong>
-                                            {{ item.header }}
-                                        </strong></i>: {{ item.description }}
-                                    </ul>
-                                {%- endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {%- endif %}
-
-        {%- if 'learn more' in cookiecutter.about  %}
-            <div class="about-cta text-center mb-4">
-                <a class="btn btn-secondary btn-lg"
-                   href="{{ cookiecutter.about.learn_more }}"
-                   target="_blank">
-                    Learn about "Hackweeks"
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        {%- endif %}
-
-        {%- if 'links' in cookiecutter.about %}
-            <div class="hero-cta text-center mb-4">
-                <h4 class="mb-3 text-center">
-                    Past Events:
-                </h4>
-                {%- for link in cookiecutter.about.links %}
-                    <a class="btn btn-primary btn-lg mb-3 mx-2"
-                       href="{{ link.url }}"
-                        {{ 'target="_blank"' if link.new_window == 'True' else '' }}
-                    >
-                        {{ link.title }}
-                    </a>
-                {%- endfor %}
-            </div>
-        {%- endif %}
-
-    </div>
-
-    {%- if 'applicant_info' in cookiecutter %}
-        <div class="media-block theme-bg-primary py-5">
-            <div class="container">
-                <h4 class="text-white text-center mb-3">
-                    Information for Applicants
-                </h4>
-                <div
-                    class="section-intro text-center single-col-max mx-auto text-white mb-3">
-                    {{cookiecutter.applicant_info}}
-                </div>
-            </div>
-        </div>
-    {%- endif %}
-</section>
 
 <!--//sponsors-section-->
 {%- if cookiecutter.sponsors %}
