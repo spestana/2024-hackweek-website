@@ -11,7 +11,7 @@ parse:
   # https://jupyterbook.org/content/content-blocks.html#using-substitutions-in-links
   myst_substitutions:
     hackweek: "GeoSmart Hackweek"
-    dates: "October 23 to 27, 2023"
+    dates: "August 19 to 23, 2024"
     github_org_url: "https://github.com/geo-smart"
     book_repo: "2023-hackweek-website"
     website_url: "https://geosmart.hackweek.io"

@@ -15,55 +15,16 @@ banner:
   image: https://geohackweek.github.io/assets/images/banner.jpg
 about:
   description:
-    <a href="https://escience.washington.edu/using-data-science/hackweeks/">Hackweeks</a> are participant-driven events that strive to create
-    welcoming spaces for participants to learn new things, build community and
-    gain hands-on experience with collaboration and team science.
-    </br></br>
-    The 2024 GeoSmart Hackweek will focus primarily on project work, with an emphasis on applications in Hydrology and Cryosphere science.
-    Project ideas will be shared in advance.
-    There will be space for new ideas to emerge during the Hackweek based on participant engagement.
-    We will provide about 5 hours of data science tutorials spread over the week, including space for participant-led tutorials.
-    </br></br>
-    During the week, participants will have the opportunity to collaborate with
-    their peers, share ideas, and work on projects leading to exciting results and
-    discoveries. This event is open to all experience levels in machine learning
-    knowledge, so whether you're a seasoned pro or just starting out, you're
-    welcome to join. However, to benefit most from the event, prior knowledge of
-    Python programming and data handling using common Python packages (pandas,
-    xarray, etc.) is desired. See the event Jupyter book for more details.
-    </br></br>
-    Preliminary project ideas include streamflow prediction from SAR-derived snowmelt timing or snow data, predicting snow water equivalent with machine learning, glacier dh/dt from DEMs using geospatial time series analysis, derivation of snow covered areas from satellite imagery, derivation of snow depth from SAR backscatter and lidar-derived snow data, predicting river discharge from seismic waves and others! Join one of these projects or pitch your own project idea at the event!
-  expanded_description:
-    header: "Hackweek activities will include:"
-    list:
-      - header: Brainstorming sessions
-        description: participants can join an existing project or come
-          up with ideas for projects that can be implemented using machine learning.
-      - header: Tutorials
-        description: learn about common machine learning workflows,
-          computational environments, reproducibility, and workflow management.
-      - header: Data preparation
-        description: explore datasets to identify and
-          engineer relevant variables that can be used to build machine learning models.
-      - header: Models
-        description: work on building machine learning models using
-          popular libraries such as TensorFlow, PyTorch, or scikit-learn.
-      - header: Model validation and optimization
-        description: validate models using
-          cross-validation and other techniques to ensure that models are
-          robust and accurate; fine-tuning hyperparameters, using feature engineering techniques, or
-          other methods.
-      - header: Presentations
-        description: participants can share the results from projects to
-          receive feedback from their peers.
-      - header: Networking
-        description: facilitated opportunities for networking and community
-          building will be provided.
-#  learn_more: https://escience.washington.edu/using-data-science/hackweeks
-team:
-  !include book/team.yaml
-schedule:
-  !include book/schedule.yaml
+    "We are in the early stages of organizing a third event as part of this series, and we need your help! Consider joining the hackweek organizing team. We will partner with you to design tutorials and projects, and provide a variety of professional development opportunities along the way. Click on the button below to learn more:"
+  learn_more: https://escience.notion.site/UW-Hackweek-Organizing-Team-Application-b7e5742a4c7e4cad8b4ece80ee171ab0
+  #links:
+  #- url: https://geosmart.hackweek.io/
+  #  title: 2023 Hackweek
+  #  new_window: true
+#team:
+#  !include book/team.yaml
+#schedule:
+#  !include book/schedule.yaml
 sponsors:
   description: 'This event was made possible by the National Science Foundation (Awards #1829585, #2117834) and the eScience Institute in collaboration with CUAHSI and ESIP. Cloud computing infrastructure provided by CryoCloud.'
   organizations:
